@@ -49,3 +49,38 @@ for date, concerts in dates.items():
     for concert in concerts:
         print(concert['artists'])
     print()
+
+# print(concerts_info)
+
+
+# url = "https://www.songkick.com/metro-areas/26794-australia-sydney"
+# page = urlopen(url)
+# html = page.read().decode("utf-8")
+# soup = BeautifulSoup(html, "html.parser")
+
+# event_listings = soup.find_all(class_="event-listings-element")
+
+# for event_listing in event_listings:
+#     # Get concert date and artists
+#     title = event_listing.get('title', 'No title attribute')
+#     artist_names = event_listing.strong.get_text()
+
+#     # Create a dictionary with concert details
+#     concert_details = {
+#     'date': title,
+#     'artists': artist_names
+#     }
+
+#     # Append the dictionary to concerts_info list
+#     concerts_info.append(concert_details)
+
+
+
+
+# for concert in concerts_info:
+#     print(concert['date'], concert['artists'])
+
+# print(concerts_info)
+
+# https://www.songkick.com/metro-areas/26794-australia-sydney?page=10#metro-area-calendar
+# https://www.songkick.com/metro-areas/26794-australia-sydney?page=1#metro-area-calendar
