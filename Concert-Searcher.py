@@ -36,16 +36,17 @@ for page in range(1,11):
 
     time.sleep(1)
 
-dates = {}
-for concert in concerts_info:
-    date = concert['date']
-    if date in dates:
-        dates[date].append(concert)
-    else:
-        dates[date] = [concert]
+with open('D:\\My Drive\\Standard Concert Search.txt', 'w') as file:
+    dates = {}
+    for concert in concerts_info:
+        date = concert['date']
+        if date in dates:
+            dates[date].append(concert)
+        else:
+            dates[date] = [concert]
 
-for date, concerts in dates.items():
-    print(f"{date}:")
-    for concert in concerts:
-        print(concert['artists'])
-    print()
+    for date, concerts in dates.items():
+        file.write(f"{date}:\n")
+        for concert in concerts:
+            file.write(f"{concert['artists']}\n")
+        file.write("\n")
