@@ -3,4 +3,6 @@ Maybe use webscraper for web version of spotify library
 BeautifulSoup documentation: https://www.crummy.com/software/BeautifulSoup/bs4/doc/
 
 Future Ideas:
-    - Use facebook events as source of concerts
+    - Use bandsintown as source of concerts
+        - Use Selenium for javascript behaviour, as the webscraper only
+        loads the first page
